@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Luxury Hotel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Luxury Hotel</h2>
+            <p>Your perfect getaway destination</p>
+            <a href="#rooms" class="btn">View Rooms</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Luxury Hotel offers a unique experience with world-class amenities and exceptional service. Located in the heart of the city, we provide the perfect blend of comfort and luxury.</p>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="room-gallery">
+                <div class="room">
+                    <img src="room1.jpg" alt="Room 1">
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious and elegant, our deluxe rooms offer stunning views and premium amenities.</p>
+                </div>
+                <div class="room">
+                    <img src="room2.jpg" alt="Room 2">
+                    <h3>Executive Suite</h3>
+                    <p>Experience ultimate luxury with our executive suites, featuring a private lounge and balcony.</p>
+                </div>
+                <div class="room">
+                    <img src="room3.jpg" alt="Room 3">
+                    <h3>Presidential Suite</h3>
+                    <p>Our presidential suite is the epitome of luxury, offering unparalleled comfort and style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Luxury Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hotel-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #77aaff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 20px 0;
+}
+
+.rooms h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.room-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.room {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.room h3 {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    background: #77aaff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+// scripts.js
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
